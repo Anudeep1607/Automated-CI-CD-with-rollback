@@ -1,0 +1,18 @@
+replicaCount: 1
+image:
+  repository: demo-app
+  tag: "local"
+  pullPolicy: Never
+app:
+  unhealthy: false
+service:
+  type: ClusterIP
+  port: 5000
+  targetPort: 5000
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 250m
+    memory: 128Mi

@@ -1,0 +1,6 @@
+apiVersion: v2
+name: demo-app
+description: Flask app for Jenkins CI/CD and Helm rollback practice
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
