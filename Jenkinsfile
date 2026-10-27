@@ -14,7 +14,7 @@ pipeline {
         NAMESPACE = 'devops-demo'
         IMAGE_NAME = 'demo-app'
         HELM_CHART = 'helm/demo-app'
-        PATH+HOMEBREW = '/opt/homebrew/bin:/usr/local/bin'
+        PATH = '/opt/homebrew/bin:/usr/local/bin:/opt/homebrew/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
     }
     stages {
         stage('Checkout') {
